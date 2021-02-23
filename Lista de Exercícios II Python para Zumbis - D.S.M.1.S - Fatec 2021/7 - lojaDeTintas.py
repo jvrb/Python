@@ -10,7 +10,8 @@ de latas.
 print("Loja de Tintas")
 tam_parede = float(input("Insira o tamanho da parede: "))
 uma_lata = 18 * 3
-latas = tam_parede / uma_lata
+latas = tam_parede // uma_lata
 if tam_parede % uma_lata != 0:
     latas += 1
-print("Para pintar uma parede de {}m, vamos precisar de {} latas" .format(tam_parede,int(latas)))
+total = latas * 80
+print("Para pintar uma parede de {}m, vamos precisar de {} latas\nPreço Total: R${}" .format(tam_parede,int(latas), total))
