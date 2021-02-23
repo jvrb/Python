@@ -1,3 +1,5 @@
+#3)  Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário. Calcule o total em segundos.
+
 print("Programa para calcular segundos")
 dias = int(input("Digite a quantidade de dias: "))
 horas = int(input("Digite a quantidade de horas: "))
