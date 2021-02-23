@@ -1,9 +1,12 @@
 #2.   Determine se um ano é bissexto. Verifique no Google como fazer isso...
 
-import calendar
 print("Programa para saber se um ano é Bissexto!!")
 ano = int(input("Ano a ser analisado: "))
-if calendar.isleap(ano) == True:
-    print("O ano {} é BISSEXTO!!" .format(ano))
+if ano % 4 == 0:
+    if ano % 100 == 0:
+        if ano % 400 == 0:
+            print("O ano é bissexto (tem 366 dias)")
+    else:
+        print("O ano é bissexto (tem 366 dias)")
 else:
-    print("O ano {} NÃO é BISSEXTO!!" .format(ano))
+    print("O ano não é um ano bissexto (tem 365 dias)")
