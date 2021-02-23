@@ -10,7 +10,7 @@ de latas.
 print("Loja de Tintas")
 tam_parede = float(input("Insira o tamanho da parede: "))
 uma_lata = 18 * 3
-latas = tam_parede // uma_lata
+latas = tam_parede // uma_lata # // é usado para fazer divisão inteira
 if tam_parede % uma_lata != 0:
     latas += 1
 total = latas * 80
