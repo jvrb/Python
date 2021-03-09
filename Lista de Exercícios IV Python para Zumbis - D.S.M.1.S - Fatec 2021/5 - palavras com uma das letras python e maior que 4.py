@@ -1,3 +1,10 @@
+def tem_python(palavra):
+    for letra in palavra:
+        if letra in 'python':
+            return True
+    return False
+
+
 print('programa split')
 frase = """The Python Software Foundation and the global Python 
 community welcome and encourage participation by everyone. Our community is based on 
@@ -14,8 +21,12 @@ frase = frase.split()
 palavras = 0
 
 for palavra in frase:
-    if palavra[0] in 'pyhton' or palavra[-1] in 'python':
-        if len(palavra) > 4:
-            palavras+=1
+    resp = tem_python(palavra)
+    if len(palavra) > 4:
+        palavras += 1
+    
 
 print(f'Palavras: {palavras}')
+
+
+
